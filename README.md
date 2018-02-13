@@ -20,7 +20,6 @@ Tested on Windows 7, Windows 8.1 and Windows 10.
 There are different kinds of artifacts :
 
 * `intellij-idea-community-portable-x.x.x-x-setup.exe` : Full portable release of IntelliJ IDEA Community as a setup.
-* `intellij-idea-community-x.x.x-x.7z` : Full portable release of IntelliJ IDEA Community as a 7z archive.
 * `intellij-idea-community-portable-win{32,64}.exe` : Only the portable binary.
 * `ideaIC-x.x.win.zip` : The original release from the [official website](https://www.jetbrains.com/idea/download/#section=windows).
 
