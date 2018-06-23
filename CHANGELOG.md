@@ -1,5 +1,9 @@
 # Changelog
 
+## 2018.2-9 (2018/06/23)
+
+* Upgrade to IntelliJ IDEA Community 2018.2
+
 ## 2018.1.5-8 (2018/06/13)
 
 * Upgrade to IntelliJ IDEA Community 2018.1.5
