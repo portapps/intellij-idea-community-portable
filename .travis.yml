@@ -1,0 +1,53 @@
+os: windows
+language: shell
+
+env:
+  global:
+    - GOPATH: /c/gopath
+    - GOROOT: /c/go
+    - GOVERSION: 1.11.5
+    - JAVA_HOME: /c/jdk
+
+before_install:
+  - rm -rf $JAVA_HOME $GOROOT
+  - export PATH=$JAVA_HOME/bin:$GOPATH/bin:$GOPATH/bin/windows_386:$GOROOT/bin:/c/nodejs:$PATH
+  - choco install jdk8 -params 'installdir=c:\\jdk'
+  - choco install ant --ignore-dependencies
+  - choco install nodejs.install -ia "INSTALLDIR=c:\\nodejs" -y
+  - npm config set prefix "c:\\nodejs"
+  - curl -fsS -o go$GOVERSION.windows-amd64.zip https://storage.googleapis.com/golang/go$GOVERSION.windows-amd64.zip
+  - 7z x go$GOVERSION.windows-amd64.zip -y -o/c/
+  - java -version
+  - ant -version
+  - go version
+  - go env
+  - node --version
+  - npm --version
+
+before_script:
+  - git clone https://github.com/portapps/portapps ${TRAVIS_BUILD_DIR}/../portapps
+
+script:
+  - ant release
+
+after_success:
+  - export APP_VERSION=`cat $TRAVIS_BUILD_DIR/bin/tmp/version.dat`
+  - echo $APP_VERSION
+
+before_deploy:
+  - git config --local user.email "builds@travis-ci.com"
+  - git config --local user.name "Travis CI"
+  - export TRAVIS_TAG="${APP_VERSION}"
+  - git tag $TRAVIS_TAG
+  - ls -al bin/release
+
+deploy:
+  provider: releases
+  api_key:
+    secure: bgpaEGohhuqlv8En/jMoy3wmJUJf4rv2NczPQg2169LBrSkwMrEnnE1pkBM/2cmMjWHecyp18gOXc7BbRcqDKVxVmBkJWVtAYVnT5zzwz1cT0jiENstXGxw79P1pGWc7IhXDN9Nm7fiGPQHvR1nMhUh//Dj7WOFfFm2w4q3Rmq7cnZdoL/qt5fJ2BYkH2qItL4A/Wp65C560t5/edTBmlY0zPOqaXENlsv5RccQ0qE8chtNGGoa4W4Atr17OuhUvcdvNX+owhime20OG+PcdxqU3RISAOeUEag8gDt6TgsVPcLuoxLvzlwjwAhP7CYyaje7yIpJfxltTUOBpLHaM0GBKYBub7t/DKmJqWqHgdSMt8MQlBn8SmrVzMEsRmUXR4EFR8x3HO/Z1soGNoDHUWl9x5skifynOr1HJ8tcFW1AOBbXMLV3R/O0I6npKEmPRe5X8sDV6yo9WeB5wMSPMLWZT72QWucU83l3PMakaxNdiLDy8UDnaZqBy9OjKdyuTQiIf6WDUV+hAusZZ0B/hJnM+xmlEz4fT9KXIQ7Oj2dAG8wAOVJGVSvQvodvH3sLpKnQ4w1eC1Hfydcq56Bm1WYDKsjORZ+PrZXYxATrzW1ZgLJmS9st3E/LUlA8SFzWDEorODQPK1VGUh+mZF7TJqqS2XhYx34MtSXr0Ml7VaXU=
+  file_glob: true
+  file: bin/release/*
+  skip_cleanup: true
+  draft: true
+  on:
+    tags: false
