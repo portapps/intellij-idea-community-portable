@@ -1,5 +1,9 @@
 # Changelog
 
+## 2018.3.5-2 (2019/02/26)
+
+* Upgrade to IntelliJ IDEA Community 2018.3.5
+
 ## 2018.3.4-1 (2019/02/04)
 
 * Upgrade to IntelliJ IDEA Community 2018.3.4
