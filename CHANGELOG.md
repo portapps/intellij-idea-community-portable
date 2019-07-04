@@ -1,5 +1,9 @@
 # Changelog
 
+## 2019.1.3-8 (2019/07/04)
+
+* Allow to customize vmoptions (Issue portapps/intellij-idea-ultimate-portable#3)
+
 ## 2019.1.3-7 (2019/05/28)
 
 * IntelliJ IDEA Community 2019.1.3
