@@ -1,6 +1,11 @@
 # Changelog
 
-## 2019.2-10 (2019/08/02)
+## 2019.2.1-29 (2019/08/21)
+
+* IntelliJ IDEA Community 2019.2.1
+* Portapps 1.26.0
+
+## 2019.2-28 (2019/08/02)
 
 * Fix 32-bit release (Issue portapps/intellij-idea-ultimate-portable#4)
 
