@@ -1,5 +1,10 @@
 # Changelog
 
+## 2019.2.2-30 (2019/09/09)
+
+* IntelliJ IDEA Community 2019.2.2
+* Portapps 1.26.1
+
 ## 2019.2.1-29 (2019/08/21)
 
 * IntelliJ IDEA Community 2019.2.1
