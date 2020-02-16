@@ -1,5 +1,9 @@
 # Changelog
 
+## 2019.3.3-36 (2020/02/16)
+
+* IntelliJ IDEA Community 2019.3.3
+
 ## 2019.3.2-35 (2020/01/27)
 
 * IntelliJ IDEA Community 2019.3.2
