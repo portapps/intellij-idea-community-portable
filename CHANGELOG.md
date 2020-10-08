@@ -1,5 +1,9 @@
 # Changelog
 
+## 2020.2.4-44 (2020/10/09)
+
+* IntelliJ IDEA Community 2020.2.4
+
 ## 2020.2.1-43 (2020/08/30)
 
 * IntelliJ IDEA Community 2020.2.1
