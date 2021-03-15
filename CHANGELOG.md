@@ -1,5 +1,10 @@
 # Changelog
 
+## 2020.3.2-46 (2021/03/15)
+
+* IntelliJ IDEA Community 2020.3.2
+* Portapps 3.3.0
+
 ## 2020.3-45 (2020/12/12)
 
 * IntelliJ IDEA Community 2020.3
