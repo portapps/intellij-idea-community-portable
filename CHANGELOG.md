@@ -3,6 +3,7 @@
 ## 2021.1-47 (2021/04/14)
 
 * IntelliJ IDEA Community 2021.1
+* Fix innosetup def
 
 ## 2020.3.2-46 (2021/03/15)
 
