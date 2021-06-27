@@ -1,5 +1,9 @@
 # Changelog
 
+## 2021.1.2-48 (2021/06/28)
+
+* IntelliJ IDEA Community 2021.1.2
+
 ## 2021.1-47 (2021/04/14)
 
 * IntelliJ IDEA Community 2021.1
