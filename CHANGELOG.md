@@ -1,5 +1,10 @@
 # Changelog
 
+## 2021.2.2-49 (2021/09/19)
+
+* IntelliJ IDEA Community 2021.2.2
+* Portapps 3.3.1
+
 ## 2021.1.2-48 (2021/06/28)
 
 * IntelliJ IDEA Community 2021.1.2
