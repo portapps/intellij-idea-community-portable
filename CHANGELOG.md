@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022.1.1-51 (2022/05/22)
+
+* IntelliJ IDEA Community 2022.1.1
+* Portapps 3.5.0
+
 ## 2021.3.2-50 (2022/03/06)
 
 * IntelliJ IDEA Community 2021.3.2
