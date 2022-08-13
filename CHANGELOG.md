@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022.2-52 (2022/08/13)
+
+* IntelliJ IDEA Community 2022.2
+
 ## 2022.1.1-51 (2022/05/22)
 
 * IntelliJ IDEA Community 2022.1.1
