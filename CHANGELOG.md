@@ -1,5 +1,10 @@
 # Changelog
 
+## 2024.1.1-56 (2024/05/05)
+
+* IntelliJ IDEA Community 2024.1.1
+* Portapps 3.10.0
+
 ## 2023.3.2-55 (2023/12/24)
 
 * IntelliJ IDEA Community 2023.3.2
