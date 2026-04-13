@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026.1-60 (2026/04/13)
+
+* IntelliJ IDEA Community 2026.1
+* Portapps 3.18.0
+
 ## 2025.3.1-59 (2026/01/07)
 
 * IntelliJ IDEA Community 2025.3.1
