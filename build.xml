@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="intellij-idea-community" basedir=".">
+<project name="intellij-idea" basedir=".">
 
-  <dirname property="app.basedir" file="${ant.file.intellij-idea-community}"/>
+  <dirname property="app.basedir" file="${ant.file.intellij-idea}"/>
   <property name="build.properties" value="${app.basedir}/build.properties"/>
   <property file="${build.properties}"/>
 

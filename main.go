@@ -24,7 +24,7 @@ func init() {
 	var err error
 
 	// Init app
-	if app, err = portapps.New("intellij-idea-community-portable", "IntelliJ IDEA Community"); err != nil {
+	if app, err = portapps.New("intellij-idea-portable", "IntelliJ IDEA"); err != nil {
 		log.Fatal().Err(err).Msg("Cannot initialize application. See log file for more info.")
 	}
 }
