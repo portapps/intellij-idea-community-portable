@@ -1,9 +1,9 @@
-<p align="center"><a href="https://portapps.io/app/intellij-idea-community-portable/" target="_blank"><img width="100" src="https://github.com/portapps/intellij-idea-community-portable/blob/master/res/papp.png"></a></p>
+<p align="center"><a href="https://portapps.io/app/intellij-idea-portable/" target="_blank"><img width="100" src="https://github.com/portapps/intellij-idea-portable/blob/master/res/papp.png"></a></p>
 
 <p align="center">
-  <a href="https://portapps.io/app/intellij-idea-community-portable/#download"><img src="https://img.shields.io/github/release/portapps/intellij-idea-community-portable.svg?style=flat-square" alt="GitHub release"></a>
-  <a href="https://portapps.io/app/intellij-idea-community-portable/#download"><img src="https://img.shields.io/github/downloads/portapps/intellij-idea-community-portable/total.svg?style=flat-square" alt="Total downloads"></a>
-  <a href="https://github.com/portapps/intellij-idea-community-portable/actions?workflow=build"><img src="https://img.shields.io/github/actions/workflow/status/portapps/intellij-idea-community-portable/build.yml?label=build&logo=github&style=flat-square" alt="Build Status"></a>
+  <a href="https://portapps.io/app/intellij-idea-portable/#download"><img src="https://img.shields.io/github/release/portapps/intellij-idea-portable.svg?style=flat-square" alt="GitHub release"></a>
+  <a href="https://portapps.io/app/intellij-idea-portable/#download"><img src="https://img.shields.io/github/downloads/portapps/intellij-idea-portable/total.svg?style=flat-square" alt="Total downloads"></a>
+  <a href="https://github.com/portapps/intellij-idea-portable/actions?workflow=build"><img src="https://img.shields.io/github/actions/workflow/status/portapps/intellij-idea-portable/build.yml?label=build&logo=github&style=flat-square" alt="Build Status"></a>
   <br /><a href="https://github.com/sponsors/crazy-max"><img src="https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square" alt="Become a sponsor"></a>
   <a href="https://www.paypal.me/crazyws"><img src="https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=flat-square" alt="Donate Paypal"></a>
 </p>
@@ -18,8 +18,8 @@ The name IntelliJ IDEA™ as well as related names, marks, emblems and images ar
 
 ## About
 
-IntelliJ IDEA™ Community portable app made with 🚀 [Portapps](https://portapps.io).<br />
-Documentation and downloads can be found on https://portapps.io/app/intellij-idea-community-portable/
+IntelliJ IDEA™ portable app made with 🚀 [Portapps](https://portapps.io).<br />
+Documentation and downloads can be found on https://portapps.io/app/intellij-idea-portable/
 
 ## Contributing
 

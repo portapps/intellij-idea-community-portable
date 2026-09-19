@@ -1,4 +1,4 @@
-module github.com/portapps/intellij-idea-community-portable
+module github.com/portapps/intellij-idea-portable
 
 go 1.26.0
 
