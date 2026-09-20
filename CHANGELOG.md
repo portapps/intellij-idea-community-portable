@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026.2.3-61 (2026/09/20)
+
+* IntelliJ IDEA 2026.2.3
+* Portapps 3.19.0
+* Bump github.com/josephspurrier/goversioninfo from 1.5.0 to 1.7.0
+
 ## 2026.1-60 (2026/04/13)
 
 * IntelliJ IDEA Community 2026.1
