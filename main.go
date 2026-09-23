@@ -17,7 +17,8 @@ var (
 )
 
 const (
-	vmOptionsFile = "idea.vmoptions"
+	vmOptionsFile         = "idea.vmoptions"
+	jbClientVmOptionsFile = "jetbrains_client64.exe.vmoptions"
 )
 
 func init() {
@@ -32,6 +33,7 @@ func init() {
 func main() {
 	ideaExe := "idea64.exe"
 	ideaVmOptionsFile := "idea64.exe.vmoptions"
+	jbClientExeVmOptionsFile := "jetbrains_client64.exe.vmoptions"
 
 	if err := os.MkdirAll(app.DataPath, 0o755); err != nil {
 		log.Fatal().Err(err).Msg("Cannot create data path")
@@ -60,6 +62,17 @@ idea.log.path={{ DATA_PATH }}/log`, "{{ DATA_PATH }}", strings.ReplaceAll(app.Da
 		files.CopyFile(filepath.Join(app.AppPath, "bin", ideaVmOptionsFile), filepath.Join(app.DataPath, vmOptionsFile))
 	} else {
 		files.CopyFile(filepath.Join(app.DataPath, vmOptionsFile), filepath.Join(app.AppPath, "bin", ideaVmOptionsFile))
+	}
+
+	jbClientAppVmOptions := filepath.Join(app.AppPath, "bin", jbClientExeVmOptionsFile)
+	jbClientDataVmOptions := filepath.Join(app.DataPath, jbClientVmOptionsFile)
+	os.Setenv("JETBRAINS_CLIENT_VM_OPTIONS", jbClientDataVmOptions)
+	if !files.Exists(jbClientDataVmOptions) {
+		if files.Exists(jbClientAppVmOptions) {
+			files.CopyFile(jbClientAppVmOptions, jbClientDataVmOptions)
+		}
+	} else {
+		files.CopyFile(jbClientDataVmOptions, jbClientAppVmOptions)
 	}
 
 	defer app.Close()
